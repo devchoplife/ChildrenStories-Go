@@ -34,7 +34,7 @@ type storyHandler struct {
 
 type storyCLI struct {
 	storyArcs map[string]storyArc
-	reader    bufio.Reader
+	reader    *bufio.Reader
 }
 
 func (sh storyHandler) serveHTTP(res http.ResponseWriter, req *http.Request) {
